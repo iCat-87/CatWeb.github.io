@@ -74,8 +74,34 @@
         }
 
         .card:hover { transform: translateY(-10px); }
-
         .card h3 { color: #ff8c42; }
+
+        /* --- NUEVOS ESTILOS PARA CONTACTO --- */
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .social-btn {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+
+        .social-btn:hover {
+            opacity: 0.8;
+        }
+
+        .discord { background-color: #5865F2; }
+        .instagram { background-color: #E1306C; }
+        .twitter { background-color: #1DA1F2; }
+        /* ----------------------------------- */
 
         /* Footer */
         footer {
@@ -95,7 +121,7 @@
             <a href="#">Inicio</a>
             <a href="#">Galería</a>
             <a href="#">Tips</a>
-            <a href="#">Contacto</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
@@ -106,16 +132,23 @@
 
     <main class="content">
         <div class="card">
-            <h3>contenido</h3>
-            <p>aquí podrás ver mis redes sociales:</p>
+            <h3>Contenido🧾</h3>
+            <p>¡Aqui podras ver todo lo que suba y novedades que hare aqui!</p>
         </div>
+
         <div class="card">
-            <h3>Servidores</h3>
-            <p>Únete a Cats And Tuna y mi nuevo servidor llamado UnderCube.</p>
+            <h3>Servidores💻</h3>
+            <p>Únete a <b>Cats And Tuna:https://discord.com/invite/dWrt4vd5Wp</b> y mi nuevo servidor llamado <b>UnderCube:https://discord.com/invite/yWamYNMHPX</b>.</p>
         </div>
-        <div class="card">
-            <h3>Contacto</h3>
-            <p>Aquí están mis contactos para que me hables:.</p>
+
+        <div class="card" id="contacto">
+            <h3>Contacto ✉️</h3>
+            <p>¡Hablemos! Puedes encontrarme en:</p>
+            <div class="social-links">
+                <a href="https://discord.com/users/1470850575535964252" class="social-btn discord">🎮 Discord: @tu_usuario</a>
+                <a href="https://www.instagram.com/cat.s2987" class="social-btn instagram">📸 Instagram</a>
+                <a href="https://www.youtube.com/channel/UCAgg2opjENRA2pXYLWQYaIg" class="social-btn twitter">♦️ youtube / YT</a>
+            </div>
         </div>
     </main>
 
